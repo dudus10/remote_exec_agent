@@ -5,13 +5,15 @@ Run tasks is an agent that allow the remote execution of tasks.
 
 How to run?
 ----------
-1. Run celery
- ```celery --app=src.utils.server_interface worker --pool=solo --loglevel=info ```
-2. Create virtual environment using the requirements.txt file for package installation: <br>
+1. Install requirements.txt file: <br>
 ``` pip install -r requirements.txt ``` 
+2. Run celery
+ ```celery --app=src.utils.server_interface worker --pool=solo --loglevel=info ```
 3. Running the program by executing server.py file, port server is customizable.
 
-RestAPI:
+For stability and reliability, this project utilizes pip freeze
+
+Rest APIs:
 -------
 
 The agent supports the below APIs:
